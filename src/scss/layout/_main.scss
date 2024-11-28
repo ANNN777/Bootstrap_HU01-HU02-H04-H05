@@ -1,0 +1,107 @@
+
+ 
+  /* Centrar el contenido de la sección principal */
+  .tituloRegistro, .col-md-7 {
+    display: flex;
+    flex-direction: column;      /* Para apilar el contenido en una columna */
+    justify-content: center;     /* Centrar verticalmente */
+    align-items: center;         /* Centrar horizontalmente */
+    margin: 0 auto;              /* Centrar en el contenedor */
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+
+  .botones .boton {
+    margin-left: 10px; /* Margen izquierdo entre botones */
+  }
+  
+  .botones .boton:first-child {
+    margin-left: 0; /* El primer botón no necesita margen izquierdo */
+  }
+  
+  .campos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .noCuenta p {
+   text-align: center;
+   margin-top: 50px;
+  }
+
+  .botonesRedes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .botonesRedes .boton {
+    margin-left: 40px; /* Margen izquierdo entre botones */
+  }
+
+  .botones .boton:first-child {
+    margin-left: 0; /* El primer botón no necesita margen izquierdo */
+  }
+
+  
+.container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+  
+.productos-mas-vendidos {
+  display: flex; /*: Convierte el contenedor en un contenedor flexible.*/
+  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea si no caben */
+}
+
+.card {
+  margin: 10px; /* Añade un margen para separar las tarjetas */
+}
+
+
+.parrafo1{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+//definiremos el estilo y las caractérisitas del buscador y de la imagen
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.search-image {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para que el botón esté debajo */
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.btn {
+  margin-top: 10px; /* Añade un margen superior para separar el botón */
+}

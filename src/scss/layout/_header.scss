@@ -1,0 +1,22 @@
+// Estilos para la cabecera
+header {
+  .navbar {
+    background-color: #22398A !important; // Color de fondo
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para la cabecera
+
+    .navbar-brand {
+      font-weight: bold; // Grosor de la fuente
+      font-size: 1.25rem; // Tamaño de la fuente
+      color: #ffffff; // Color del texto de la marca
+    }
+
+    .navbar-toggler {
+      border: none; // Quitar borde del menú
+      transition: transform 0.3s ease; // Transición suave
+
+      &:hover {
+        transform: scale(1.1); // Efecto de hover
+      }
+    }
+  }
+}
