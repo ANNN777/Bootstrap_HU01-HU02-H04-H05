@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px; /* Añadir espacio entre la cabecera y las gráficas */
+        }
+
+        .chart-container {
+            width: 50%; /* Reduce el ancho para ocupar menos espacio */
+            margin: 20px auto; /* Margen superior adicional para más separación */
+        }
+
+        #dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 20px; /* Añadir espacio desde la parte superior del dashboard */
+        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>  
+   
+</head>
+<body>
+
+     <!-- Aqui entra el header.  -->
+     <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+           
+            <a class="navbar-brand" href="/">TICKET- LOGGER</a>
+
+            <!-- --imagen_logo_ticket_loger -->
+            <div class="logoTicketLogger">
+                <img src="assets/svg/logo_app.svg" alt="logoTicketLogger" width="80"/>
+                </div>
+
+            <div class="d-flex">
+              <button id="themeToggle" class="btn btn-outline-primary me-2">
+                <i class="bi bi-sun" id="themeIcon"></i>
+              </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/registro.html">Registro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/productos_mas.html">Productos más vendidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/buscador_super.html">Buscador supermercado más barato</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/dashboard.html">Dashboard</a>
+                </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+
+      <!-- Aquí enlaza con mi chart.js -->
+      <h1 style="text-align:center;">Ticket Logger Dashboard</h1>
+      <div id="dashboard">
+          <div class="chart-container">
+              <canvas id="categoriaChart"></canvas>
+          </div>
+          <div class="chart-container">
+              <canvas id="gastoPromedioSupermercado"></canvas>
+          </div>
+          <div class="chart-container">
+              <canvas id="gastoPromedioTicket"></canvas>
+          </div>
+          <div class="chart-container">
+              <canvas id="ticketsPorDia"></canvas>
+          </div>
+      </div>
+
+    </main>
+      
+      <footer class="container-fluid text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Volver arriba</a>
+          </p>
+          <p class="mb-1">Este portafolio es &copy; 2024 por ANTONIO MÉRIDA de 2º DAW. ¡Mira los proyectos!</p>
+          <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+        
+        <img src="https://creativecommons.org/images/deed/cc_icon_white_x2.png" alt="Creative Commons Logo">
+        <p>Este contenido está bajo una licencia<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a>.</p>
+        
+        </div>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
