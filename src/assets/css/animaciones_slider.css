@@ -1,0 +1,9 @@
+.fregasuelos_1 h4{
+    animation-name: aparicion;
+    animation-duration: 3s;
+}
+
+@keyframes aparicion {
+    0% {color:blue}
+    100% {color:rgb(255, 0, 0)}
+}

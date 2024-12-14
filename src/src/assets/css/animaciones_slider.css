@@ -1,0 +1,55 @@
+.fregasuelos_1 h4{
+    animation-name: aparicion;
+    animation-duration: 4s;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+@keyframes aparicion {
+    0% {opacity:0;}
+    100% {opcaity:100;}
+}
+
+/* Ensalada California */
+
+.ensalada h4{
+    animation-name: aparicion;
+    animation-duration: 4s;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+@keyframes aparicion {
+    0% {opacity:0;}
+    100% {opcaity:100;}
+}
+
+/* Picos Camperos de Jerez*/
+.picos h4{
+    animation-name: aparicion;
+    animation-duration: 4s;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+@keyframes aparicion {
+    0% {opacity:0;}
+    100% {opcaity:100;}
+}
+
+/*cereales*/
+.cereales h4{
+    animation-name: aparicion;
+    animation-duration: 4s;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+@keyframes aparicion {
+    0% {opacity:0;}
+    100% {opcaity:100;}
+}
